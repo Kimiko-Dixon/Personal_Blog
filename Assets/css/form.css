@@ -1,0 +1,35 @@
+main {
+    flex: 2 1 auto;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border-left: .25em solid;
+    height: 100%;
+    margin-left: -.325em;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: .5em;
+}
+
+form {
+    width: 100%;
+    padding: 3%;
+}
+
+input {
+    height: 2em;
+}
+
+textarea {
+    height: 10em;
+}
+
+#Submit {
+    padding-top: .5em;
+    width: 100%;
+}

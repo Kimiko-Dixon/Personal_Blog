@@ -1,0 +1,25 @@
+h1 {
+    height: auto;
+    width: auto;
+    border-radius: 0%;
+    align-items: left;
+    display: flex;
+    justify-content: left;
+    background-image: none;
+}
+
+body {
+    align-items: normal;
+    justify-content: left;
+}
+
+footer {
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    top: 40%;
+    border-top: .7em double black;
+    width: 100%;
+    flex: 0 1 auto;
+}
