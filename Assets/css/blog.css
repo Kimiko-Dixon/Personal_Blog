@@ -9,8 +9,7 @@ h1 {
 }
 
 body {
-    align-items: normal;
-    justify-content: left;
+    display: block;
 }
 
 footer {
@@ -22,4 +21,30 @@ footer {
     border-top: .7em double black;
     width: 100%;
     flex: 0 1 auto;
+}
+
+div {
+    border: .1em solid black;
+    margin: .1em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+h5 {
+    border-bottom: .1em solid black;
+    margin: .3em 0.5em 0;
+}
+
+p {
+    height: 5em;
+    margin: 0px 1em;
+}
+
+h6 {
+    color: grey;
+    font-weight: normal;
+    margin: 0 0.5em 0.5em;
 }
