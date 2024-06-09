@@ -1,4 +1,5 @@
 const main = document.querySelector('main');
+const backButton  = document.querySelector('#Back')
 
 function displayPosts()
 {
@@ -22,9 +23,14 @@ function displayPosts()
         divEl.appendChild(titleEl)
         divEl.appendChild(contentEl)
         divEl.appendChild(usernameEl)
+        divEl.setAttribute('class', 'posts')
         main.appendChild(divEl);
     }
 
 }
 
+backButton.addEventListener('click', function()
+{
+    window.location.href = './index.html';
+})
 displayPosts()
