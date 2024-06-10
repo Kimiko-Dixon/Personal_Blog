@@ -1,9 +1,11 @@
+/* Universal selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     display: flex;
     flex-direction: row;
@@ -15,6 +17,28 @@ body {
     justify-content: center;
 }
 
+/* Positions theme and/or back button(s) */
+.buttons {
+    position: absolute;
+    right: 0;
+    display: flex;
+    
+}
+
+/* Button styling */
+button {
+    padding: 0 .5em;
+    border: none;
+}
+
+/* theme button styling */
+#Theme {
+    background-color: transparent;
+    color: #FFC107;
+    margin: 0 1em 0 .5em;
+}
+
+/* Header */
 header {
     height: 50px;
     border-bottom: .7em double;
@@ -25,11 +49,12 @@ header {
     align-items: center;
 }
 
+/* Left side of the page */
 aside {
     flex-wrap: wrap;
     display: flex;
     width: 50%;
-    height: 100%;
+    height: 88%;
     flex: 2 1 auto;
     align-items: center;
     justify-content: center;
@@ -37,11 +62,10 @@ aside {
     margin-right: -.325em;
 }
 
+/* Page heading */
 h1 {
-    width: 70%;
-    height: 70%;
-    /* width: 60%;
-    height: 65%; */
+    width: 20em;
+    height: 20em;
     border-radius: 50%;
     align-items: center;
     display: flex;
@@ -49,6 +73,7 @@ h1 {
     background-image: linear-gradient(0deg, #98681b 0%, #ffb02d 30%, #ffd62f 60%);;
 }
 
+/* Form heading */
 h2 {
     display: flex;
     flex-direction: column;
@@ -57,6 +82,7 @@ h2 {
     top: 25%;
 }
 
+/* Themes */
 .light {
     background-color: #fff;
     color: #000000;
@@ -67,19 +93,15 @@ h2 {
     color: #fff;
 }
 
-.buttons {
-    position: absolute;
-    right: 0;
-    display: flex;
-    
-}
-button {
-    padding: 0 .5em;
-    border: none;
-}
+/* media query for screen width less than 768px*/
+@media screen and (max-width: 768px)
+{
+    header {
+        justify-content: center;
+        padding: 2em 0;
+    }
 
-#Theme {
-    background-color: transparent;
-    color: #FFC107;
-    margin: 0 1em 0 .5em;
+    .buttons {
+        position: static;
+    }
 }

@@ -1,10 +1,14 @@
+// Assigns Selected elements to a variable
 const main = document.querySelector('main');
 const backButton  = document.querySelector('#Back')
 
+// Displays blog posts from local storage on page
 function displayPosts()
 {
+    // Clears main
     main.innerHTML = ''
 
+    // Creates new elements to display the posts and appends it to the page
     for(let i = 0; i < blogPostArray.length; i++)
     {
         const username = blogPostArray[i].username;
@@ -18,7 +22,7 @@ function displayPosts()
 
         titleEl.textContent = title;
         contentEl.textContent = content;
-        usernameEl.textContent = username;
+        usernameEl.textContent = `Posted by: ${username}`;
 
         divEl.appendChild(titleEl)
         divEl.appendChild(contentEl)
@@ -29,8 +33,10 @@ function displayPosts()
 
 }
 
+// Sends user to the index page
 backButton.addEventListener('click', function()
 {
     window.location.href = './index.html';
 })
+
 displayPosts()
