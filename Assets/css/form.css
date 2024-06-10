@@ -1,3 +1,4 @@
+/* Main */
 main {
     flex: 2 1 auto;
     display: flex;
@@ -5,10 +6,12 @@ main {
     justify-content: center;
     align-items: center;
     border-left: .25em solid;
-    height: 100%;
+    height: 88%;
     margin-left: -.325em;
+    padding-left: .325em;
 }
 
+/* Form positioning */
 div {
     display: flex;
     flex-direction: column;
@@ -16,6 +19,7 @@ div {
     padding-bottom: .5em;
 }
 
+/* Form styling */
 form {
     width: 100%;
     padding: 3%;
@@ -32,4 +36,44 @@ textarea {
 #Submit {
     padding-top: .5em;
     width: 100%;
+}
+
+/* media query for screen width less than 992px*/
+@media screen and (max-width: 992px)
+{
+    h1 {
+        width: 15em;
+        height: 15em;
+    }
+}
+
+/* media query for screen width less than 768px*/
+@media screen and (max-width: 768px)
+{
+    body {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: static;
+    }
+
+    aside {
+        width: 100%;
+        border: none;
+    }
+    
+    h1 {
+        width: 10em;
+        height: 10em;
+        margin-top: 1.5em;
+    }
+
+    main {
+        width: 100%;
+        border: none;
+        margin-top: 8em;
+    }
+
+    h2 {
+        top: 18em;
+    }
 }

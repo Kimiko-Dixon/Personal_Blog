@@ -7,17 +7,26 @@
     <link rel="stylesheet" href="./Assets/css/styles.css"/>
     <link rel="stylesheet" href="./Assets/css/form.css"/>
 </head>
+
+<!-- Remembers the theme last applied and applies it to the page when loaded -->
 <body class="light" onload="checkTheme()">
+
     <header>
+
+        <!-- Theme button -->
         <div class="buttons">
-        <button type="button" id="Theme">☀</button>
+            <button type="button" id="Theme"></button>
         </div>
+
     </header>
 
+    <!-- Page Heading -->
     <aside>
         <h1>My first Blog</h1>
        
     </aside>
+
+    <!-- Form -->
     <main>
         <h2>What's on Your mind?</h2> 
         <form>
@@ -37,6 +46,7 @@
                 <textarea name="" id="Content"></textarea>
             </div>
 
+            <!-- Error message appears when all fields are not filled -->
             <span id="Error"></span>
 
             <div id="Submit">
@@ -46,13 +56,8 @@
         </form>
     </main>
 
-
-
-
-
-
-
     <script src="./Assets/js/logic.js"></script>
     <script src="./Assets/js/form.js"></script>    
+
 </body>
 </html>
